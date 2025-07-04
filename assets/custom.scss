@@ -1,3 +1,13 @@
 @import '../bootstrap-5.3.7/scss/functions';
 @import '../bootstrap-5.3.7/scss/variables.scss';
+
+$new-spacer: 1rem;
+$new-spacers: (
+  6: $new-spacer * 3.5,
+  7: $new-spacer * 4,
+  8: $new-spacer * 5,
+  9: $new-spacer * 5.5,
+  10: $new-spacer * 6,
+);
+$spacers: map-merge($spacers, $new-spacers);
 @import '../bootstrap-5.3.7/scss/bootstrap.scss';

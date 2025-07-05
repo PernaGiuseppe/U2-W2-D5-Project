@@ -11,4 +11,27 @@ $new-spacers: (
 );
 $spacers: map-merge($spacers, $new-spacers);
 
+$new-black: #141414;
+$new-black1: #111111;
+$new-theme-colors: (
+  'black-grey': $new-black,
+  'black-new': $new-black1,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+// avevo creato questi nuovi colori per cambiare il bg del body, ma poi ho cercato il gradiente ed ho messo quello, penso sia venuto meglio
+
 @import '../bootstrap-5.3.7/scss/bootstrap.scss';
+.gradient-black-to-grey {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(13, 13, 13, 1) 50%,
+    rgba(20, 20, 20, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
+.scale-img:hover {
+  transform: scale(1.3);
+  z-index: 1;
+  transition: all 0.5s linear 0.2s;
+}

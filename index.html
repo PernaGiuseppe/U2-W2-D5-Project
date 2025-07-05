@@ -16,9 +16,9 @@
     />
     <link rel="stylesheet" href="./assets/custom.css" />
   </head>
-  <body class="bg-black">
+  <body class="gradient-black-to-grey">
     <header>
-      <nav class="navbar navbar-expand">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img height="40" src="./assets/media/netflix_logo.png" />
@@ -35,8 +35,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active">
                 <a class="nav-link text-light" href="#">Home</a>
               </li>
@@ -58,22 +58,62 @@
                 <a class="nav-link text-light" href="#">My List</a>
               </li>
             </ul>
-            <div class="d-flex align-items-center">
-              <div class="d-flex align-items-center me-4">
-                <i class="bi bi-search text-light me-3"></i>
-                <a class="nav-link text-light" href="#">KIDS</a>
-              </div>
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center mt-3 mt-lg-0"
+            >
+              <div class="d-flex align-items-center mb-lg-0">
+                <button
+                  id="edit-button"
+                  type="button"
+                  class="btn btn-danger rounded-0 me-lg-4 me-sm-2 me-md-3 text-black fw-semibold mb-2 mb-lg-0"
+                >
+                  Profile
+                </button>
+                <div class="d-flex align-items-center me-3 me-lg-4">
+                  <i class="bi bi-search text-light me-3"></i>
+                  <a class="nav-link text-light" href="#">KIDS</a>
+                </div>
 
-              <i class="bi bi-bell-fill text-light me-4"></i>
-              <button class="custom-dropdown-button">
-                <img
-                  src="./assets/media/kids_icon.png"
-                  height="40"
-                  alt="kids-icon"
-                  class="button-icon"
-                />
-                <span class="dropdown-arrow"></span>
-              </button>
+                <i class="bi bi-bell-fill text-light me-3 me-lg-4"></i>
+                <div class="input-group">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle rounded-0"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./assets/media/kids_icon.png"
+                      class="img-fluid me-2"
+                      style="max-height: 24px"
+                      alt="Icona"
+                    />
+                  </button>
+                  <ul class="dropdown-menu rounded-0">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          style="height: 30px"
+                          src="./assets/media/yellow-icon.jpg"
+                          alt="red-icon-netflix"
+                          class="pe-2"
+                        />Giuseppe</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          style="height: 30px"
+                          src="./assets/media/red-icon.jpg"
+                          alt="red-icon-netflix"
+                          class="pe-2"
+                        />Stefano</a
+                      >
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +125,7 @@
           <h1 class="text-light me-4">TV Shows</h1>
           <div class="dropdown">
             <button
-              class="btn btn-black border-white text-white dropdown-toggle"
+              class="btn btn-black border-white text-white dropdown-toggle rounded-0 px-3"
               type="button"
               id="dropdownMenuButton"
               data-bs-toggle="dropdown"
@@ -94,7 +134,7 @@
               Generi
             </button>
             <ul
-              class="dropdown-menu dropdown-menu-dark"
+              class="dropdown-menu dropdown-menu-dark rounded-0"
               aria-labelledby="dropdownMenuButton"
             >
               <li><a class="dropdown-item" href="#">Fantascienza</a></li>
@@ -106,72 +146,77 @@
           </div>
         </div>
         <div class="d-flex">
-          <button class="btn btn-black border-white text-white me-3">
+          <button class="btn btn-black border-white text-white rounded-0">
             <i class="bi bi-list"></i>
           </button>
-          <button class="btn btn-black border-white text-white">
+          <button class="btn btn-black border-white text-white rounded-0">
             <i class="bi bi-grid"></i>
           </button>
         </div>
       </div>
+
       <section class="my-4">
         <h3 class="mb-3 text-light">Trending Now</h3>
         <div class="row g-1">
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media0.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="sherlock"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media1.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="american-factory"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media2.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="the-good-place"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media3.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="genius-war"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
-              <img src="./assets/imgs/media4.jpg" class="card-img" alt="cuba" />
+              <img
+                src="./assets/imgs/media4.jpg"
+                class="card-img scale-img"
+                alt="cuba"
+              />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media5.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="china-hustle"
               />
             </div>
           </div>
-          <!-- <div class="col-2 mb-4">
+          <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media6.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="social-dilemma"
               />
             </div>
@@ -181,65 +226,65 @@
       <section class="my-3">
         <h3 class="mb-3 text-light">Watch it Again</h3>
         <div class="row g-1">
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media11.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="the-college"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media12.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="tribes"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media13.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="narcos"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media14.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="breaking-bad"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media15.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="explained"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media16.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="rick-morty"
               />
             </div>
           </div>
-          <!-- <div class="col-2 mb-4">
+          <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media17.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="white-helmets"
               />
             </div>
@@ -249,65 +294,65 @@
       <section class="my-3">
         <h3 class="mb-3 text-light">New Releases</h3>
         <div class="row g-1">
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media22.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="HIMYM"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media23.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="dream-big"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media24.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="our-planet"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media25.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="modern-family"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media26.webp"
-                class="card-img"
+                class="card-img scale-img"
                 alt="leyla-mecnun"
               />
             </div>
           </div>
-          <div class="col-2 mb-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media27.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="history-101"
               />
             </div>
           </div>
-          <!-- <div class="col-2 mb-4">
+          <!-- <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <div class="shadow border-0">
               <img
                 src="./assets/imgs/media28.jpg"
-                class="card-img"
+                class="card-img scale-img"
                 alt="peaky-blinders"
               />
             </div>
@@ -315,10 +360,12 @@
         </div>
       </section>
     </main>
-    <footer class="container bg-black text-dark-emphasis mt-9 py-2">
+    <footer
+      class="container text-dark-emphasis mt-9 mb-3 py-2 text-center text-md-start text-md-center text-lg-start"
+    >
       <div class="container">
         <div class="row mb-3">
-          <div class="col-12">
+          <div class="col-12 px-0">
             <a href="#" class="text-dark-emphasis mx-2"
               ><i class="bi bi-facebook fs-4"></i
             ></a>
@@ -445,15 +492,19 @@
         </div>
 
         <div class="row mb-4">
-          <div class="col-12 text-center text-md-start">
-            <button class="btn btn-outline-secondary btn-sm">
+          <div
+            class="col-12 text-center text-md-start text-md-center text-lg-start"
+          >
+            <button class="btn btn-outline-secondary btn-sm rounded-0 px-4">
               Service Code
             </button>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-12 text-center text-md-start">
+          <div
+            class="col-12 text-center text-md-start text-md-center text-lg-start"
+          >
             <p class="text-dark-emphasis small mb-0">
               &copy; 1997-2019 Netflix, Inc. {i-000c0bba29fecb0a}
             </p>
@@ -466,5 +517,12 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const editButton = document.getElementById('edit-button')
+      editButton.addEventListener('click', function () {
+        event.preventDefault()
+        window.location.href = 'profilo.html'
+      })
+    </script>
   </body>
 </html>
